@@ -1,0 +1,10 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import {mixinItem} from './mixins';
+import 'normalize.css';
+import 'animate.css';
+const app = createApp(App);
+app.mixin(mixinItem);
+app.use(router);
+app.mount('#app');
